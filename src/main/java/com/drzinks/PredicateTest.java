@@ -2,9 +2,10 @@ package com.drzinks;
 
 import java.util.function.Predicate;
 
+/* takes one argument returns boolean, method called 'test'*/
 public class PredicateTest {
 
-    //when want to create generic, create on some specifix type
+    //when want to create generic, create on some specific type
 
     interface Evaluate<Integer>{
         boolean isNegative(Integer t);
