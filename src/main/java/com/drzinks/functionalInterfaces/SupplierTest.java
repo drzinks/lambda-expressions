@@ -1,4 +1,4 @@
-package com.drzinks;
+package com.drzinks.functionalInterfaces;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

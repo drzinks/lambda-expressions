@@ -1,4 +1,4 @@
-package com.drzinks;
+package com.drzinks.functionalInterfaces;
 
 import java.util.function.Predicate;
 
