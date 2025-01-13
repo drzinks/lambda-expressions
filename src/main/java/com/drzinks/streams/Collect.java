@@ -2,6 +2,7 @@ package com.drzinks.streams;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -28,6 +29,14 @@ public class Collect {
         map.entrySet().forEach(System.out::println);
 
 
+        List<String> names =  Stream.of("Michal", "Maciek", "Jarek", "Michal", "Jacek").toList();
+
+        Map<Integer, Set<String>> lengthToName = names.stream().collect(Collectors.groupingBy(
+            name -> name.length(),
+            TreeMap::new,
+            Collectors.toSet()
+        ));
+        System.out.println(lengthToName); //{5=[Jarek, Jacek], 6=[Michal, Maciek]}
     }
 
 }
