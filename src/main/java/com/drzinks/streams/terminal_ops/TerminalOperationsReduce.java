@@ -1,4 +1,4 @@
-package com.drzinks.streams;
+package com.drzinks.streams.terminal_ops;
 
 import java.util.stream.Stream;
 

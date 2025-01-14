@@ -1,4 +1,4 @@
-package com.drzinks.streams;
+package com.drzinks.streams.terminal_ops;
 
 import java.util.List;
 import java.util.Map;
@@ -37,6 +37,14 @@ public class Collect {
             Collectors.toSet()
         ));
         System.out.println(lengthToName); //{5=[Jarek, Jacek], 6=[Michal, Maciek]}
+
+        Map<Boolean, Set<String>> map2 = names.stream()
+                .collect(Collectors.partitioningBy(text -> text.contains("c"),Collectors.toSet()));
+        map2.entrySet().forEach(System.out::println);
+//        false=[Jarek]
+//        true=[Jacek, Michal, Maciek]
+
+
     }
 
 }
