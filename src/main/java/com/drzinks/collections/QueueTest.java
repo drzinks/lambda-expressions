@@ -35,6 +35,7 @@ public class QueueTest {
 
         while(itPrio.hasNext()){
             System.out.print(tasks.poll() + ", "); //Prayer, Meditation, Excercises, Breakfast, Surfing net
+            //.element() takes, but does not remove
         }
 
     }
