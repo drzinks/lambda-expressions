@@ -31,7 +31,6 @@ public class TestPatterns {
             case String text -> "Some text: " + text;
             default -> "Not a valid type";
         };
-
     }
 
     //record patterrns
